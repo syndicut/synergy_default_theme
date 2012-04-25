@@ -1,5 +1,4 @@
 require 'spree_core'
-require 'spree_compare_products_hooks' if defined?(SpreeCompareProducts)
 
 module SynergyDefaultTheme
   class Engine < Rails::Engine
