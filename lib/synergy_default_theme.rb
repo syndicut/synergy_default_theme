@@ -1,5 +1,4 @@
 require 'spree_core'
-require 'spree_reviews_hooks' if defined?(SpreeReviews)
 require 'spree_compare_products_hooks' if defined?(SpreeCompareProducts)
 
 module SynergyDefaultTheme
