@@ -17,7 +17,6 @@ Spree::BaseHelper.module_eval do
       content_tag(:script,
       		"$.jGrowl(\"#{flash[msg.to_sym]}\", { header: '#{t(msg, :default => msg).mb_chars.titleize}', sticky: true, theme: '#{msg}' });".html_safe
 			) unless flash[msg.to_sym].blank?
-      flash.delete(msg.to_sym)
     end.join("\n").html_safe
   end
 end
