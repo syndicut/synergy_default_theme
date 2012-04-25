@@ -34,8 +34,8 @@
         <% end %>
       </div>
       <div class="links" data-hook="advanced_cart_subtotal_links">
-        <%= link_to image_tag('/images/update.png') + t("recalculate"), '#', :class => 'button checkout primary', :onclick => "$('form#updatecart').submit(); return false;" %>
-        <%= link_to image_tag('/images/checkout.png') + t("checkout"), checkout_path, :class => 'button checkout primary' %>
+        <%= link_to image_tag('store/update.png') + t("recalculate"), '#', :class => 'button checkout primary', :onclick => "$('form#updatecart').submit(); return false;" %>
+        <%= link_to image_tag('store/checkout.png') + t("checkout"), checkout_path, :class => 'button checkout primary' %>
       </div>
     </div>
 
