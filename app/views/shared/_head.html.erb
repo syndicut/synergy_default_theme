@@ -2,13 +2,10 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/favicon.ico" />
 <link rel="icon" type="image/png" href="/favicon.png" />
-
 <%== meta_data_tags %>
-<%= csrf_meta_tag %>
-
-
-  <%== stylesheet_tags %>
-
+<%= stylesheet_link_tag 'store/all', :media => 'screen' %>
+<%= csrf_meta_tags %>
+<%= javascript_include_tag 'store/all' %>
 <% unless I18n.locale.to_s[0..1] == 'en' %>
   <%= javascript_include_tag ['localization/messages_', I18n.locale.to_s[0..1], '.js'].join %>
 <% end %>
