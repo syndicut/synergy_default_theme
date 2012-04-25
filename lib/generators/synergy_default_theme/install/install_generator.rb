@@ -3,7 +3,7 @@ module SynergyDefaultTheme
     class InstallGenerator < Rails::Generators::Base
 
       def add_javascripts
-        append_file "app/assets/javascripts/store/all.js", "//= require store/jquery.growl.min\n"+
+        append_file "app/assets/javascripts/store/all.js", "//= require store/jquery.jgrowl.min\n"+
                                                            "//= require store/jquery.tools.min\n"+
                                                            "//= require store/product\n"+
                                                            "//= require store/product_simple\n"
