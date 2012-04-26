@@ -3,17 +3,8 @@
 <head data-hook="inside_head">
   <%= render 'shared/head' %>
 </head>
-<%
-   if @body_class.nil?
-     if content_for?(:sidebar)
-       @body_class = 'two-col'
-     else
-       @body_class = 'one-col'
-     end
-   end
-%>
 
-<body class="<%= @body_class %>" id="<%= @body_id %>">
+<body class="<%= body_class %>" id="<%= @body_id || 'default' %>" data-hook="body">
 
 <div class="wrapper">
   <div class="main_top" align="center">
