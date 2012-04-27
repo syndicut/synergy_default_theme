@@ -15,6 +15,10 @@ module SynergyDefaultTheme
                           :verbose => true
       end
 
+      def add_favicon
+        run 'rake synergy_default_theme:install:assets'
+      end
+
       def add_migrations
         run 'rake railties:install:migrations FROM=synergy_default_theme'
       end
