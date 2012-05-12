@@ -31,8 +31,6 @@
       params.delete(:search)
       params.delete(:taxon)
 %>
-  <%= paginate(paginated_products,
-                    :previous_label => "&#171; #{t('previous')}",
-                    :next_label => "#{t('next')} &#187;") %>
+  <%= paginate paginated_products %>
 <% end %>
  
